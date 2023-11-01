@@ -1,0 +1,42 @@
+html {
+    background-color: rgb(17, 16, 16);
+    color: rgb(255, 255, 255);
+    font-family: "arial black";
+    text-align: center;
+    margin: 0;
+    padding:0;
+}
+
+.gallery {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap: 1rem; */
+	padding: 2px;
+	transition: .3s;
+}
+
+.gallery-column {
+    flex-direction: column;
+    width: fit-content;
+    padding:0;
+}
+
+.gallery-image {
+    position: relative;
+}
+
+img{
+    display: block;
+    width: 100%;
+    transition: .3s;
+}
+
+img:hover{
+    transform: scale(1.1);
+    
+}
+
+.gallery-content{
+    margin: 5px;
+    overflow: hidden;
+}
